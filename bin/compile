@@ -51,7 +51,7 @@ install_meteor() {
   # curl https://www.dropbox.com/s/c32c6ivq1f74dpa/meteor_install_script?dl=0 | sh
   status "Downloading Meteor install script"
   METEOR_INSTALL_SCRIPT=install_meteor.sh
-  curl https://www.dropbox.com/s/c32c6ivq1f74dpa/meteor_install_script?dl=1 > $METEOR_INSTALL_SCRIPT
+  curl https://www.dropbox.com/s/c32c6ivq1f74dpa/meteor_install_script?raw=1 > $METEOR_INSTALL_SCRIPT
 
   status "Installing Meteor connected to $MONGO_URL"
   sed -e '/^#!\/bin\/sh/ s/$/ -x/' \
